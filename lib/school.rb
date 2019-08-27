@@ -6,8 +6,9 @@ class School
     @roster = Hash.new {|h,k| h[k] = []}
   end
   
-  
   def add_student(student_name, grade)
     @roster[grade] << student_name
   end
+  
+  
 end
